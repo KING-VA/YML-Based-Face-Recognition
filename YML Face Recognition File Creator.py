@@ -7,7 +7,7 @@ from time import sleep
 
 margin = 5
 
-File_PATH = "C:\\Users\\alapativ\\Documents\\Face Recognition\\Face Rec Training"
+File_PATH = "C:\\Users\\user\\Documents\\Face Recognition\\Face Rec Training"
 path = "C:\\Data\\User 1"
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
@@ -22,7 +22,7 @@ def imagesgetter():
     
     face_id = input(' Enter user ID:\n  ')
     
-    pic_PATH = "C:\\Users\\alapativ\\Documents\\Face Recognition\\Face Rec Training\\Data\\User " + str(face_id)
+    pic_PATH = "C:\\Users\\user\\Documents\\Face Recognition\\Face Rec Training\\Data\\User " + str(face_id)
 
     if not os.path.exists(pic_PATH):
         os.makedirs(pic_PATH)
@@ -86,7 +86,7 @@ def main():
     save_img = input("Enter 1 to delete the 30 .jpg images that were just created at " + pic_PATH + ".\n")
     if (str(save_img) == "1"):
         print("Removing files....")
-        shutil.rmtree("C:\\Users\\alapativ\\Documents\\Face Recognition\\Face Rec Training\\Data\\User " + str(user))
+        shutil.rmtree("C:\\Users\\user\\Documents\\Face Recognition\\Face Rec Training\\Data\\User " + str(user))
     print("YML file created and all operations completed. Have a nice Day.")
 
 if __name__ == "__main__":
