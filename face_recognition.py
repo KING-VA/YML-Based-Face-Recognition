@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import os
 
-YML_PATH1 = "C:\\Users\\alapativ\\Documents\\Face Recognition\\Face Rec Training\\User 1 Trainer.yml"
-YML_PATH2 = "C:\\Users\\alapativ\\Documents\\Face Recognition\\Face Rec Training\\User 2 Trainer.yml"
+YML_PATH1 = "C:\\Users\\user\\Documents\\Face Recognition\\Face Rec Training\\User 1 Trainer.yml"
+YML_PATH2 = "C:\\Users\\user\\Documents\\Face Recognition\\Face Rec Training\\User 2 Trainer.yml"
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read(YML_PATH1)
 #recognizer.read(YML_PATH2)
